@@ -22,6 +22,9 @@ Desenvolvido para colocar em prática os meus conhecimentos de tecnologias WEB. 
   <br><hr> <br>
   <p>CEP digitado inválido:</p>
   <img alt="Buscador de cep" src="./assets/img/danger.png" width="100%">
+  <br><hr> <br>
+  <p>Popup de alerta de campo vazio:</p>
+  <img alt="Buscador de cep" src="./assets/img/popup.png" width="100%">
 </p>
 
 ## 🚀 Tecnologias

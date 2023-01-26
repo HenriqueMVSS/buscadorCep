@@ -1,10 +1,14 @@
 let theme = document.querySelector('.theme');
 let search = document.querySelector('.search');
+let popup = document.querySelector('.popup-wrapper');
+let popupClose = document.querySelector('.popup-close');
+let popupConfirm = document.querySelector('.popup-confirm');
 let form = document.createElement('form');
 let input = document.createElement('input');
 let button = document.createElement('input');
 let br = document.createElement('br');
 let content = document.createElement('div');
+
 
 content.classList.add('address');
 input.classList.add('cep');
@@ -26,12 +30,15 @@ button.setAttribute('value', 'Buscar endereço');
 
 // console.log(input);
 
+popupClose.addEventListener('click', () => popup.style.display = 'none');
+popupConfirm.addEventListener('click', () => popup.style.display = 'none');
+
 button.addEventListener('click', (e) => {
   e.preventDefault();
   if(input.value.length > 0) {
     submit();
   } else {
-    alert('Preencha todos os campos')
+    popup.style.display = 'block';
   }
 
   input.value = '';
