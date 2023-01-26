@@ -15,16 +15,18 @@ h1 {
 
 
 .theme {
-  /* background: red; */
-  height: 943px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 100vh;
 }
 
 .search {
   padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
 }
 
 .cep {
@@ -72,6 +74,33 @@ h1 {
   font-size: 20px;
 }
 
+@media(max-width:570px) {
 
+  h1 {
+    font-size: 24px;
+  }
 
+  .search {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
 
+  .cep { 
+    width: 150px;
+    margin: auto;
+  }
+
+  .search-address {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    width: 100%;
+    background: white;
+    color: cornflowerblue;
+  }
+
+}
